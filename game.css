@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1093.jpg?w=740&t=st=1661003113~exp=1661003713~hmac=3f07ce99d3c23143f87d8e4fdd5795501b2077ed2321f39b5f04a682e1cb23b8);
+  background-size: cover;
+
+  color: #fff;
+}
+h2 {
+  padding-top: 0.25rem;
+}
+/* To center everything in game */
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title of the game */
+.title {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
+  color: cyan;
+}
+
+/* Score Board */
+.score {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+/* Score  */
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+/* Styling on all three buttons */
+.rock,
+.paper,
+.scissor {
+  padding: 0.8rem;
+  width: 100px;
+  border-radius: 10px;
+  background: blue;
+  outline: none;
+  border-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+  color: cyan;
+}
+
+/* Reload button style */
+.reload {
+  display: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: blue;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
